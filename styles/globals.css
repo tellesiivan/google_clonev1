@@ -4,7 +4,7 @@
 
 @layer components {
   .link {
-    @apply hover:underline cursor-pointer;
+    @apply hover:cursor-pointer;
   }
   .flexLinks {
     @apply flex text-black text-sm space-x-3 items-center;
