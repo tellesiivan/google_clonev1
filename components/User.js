@@ -8,7 +8,7 @@ export default function User() {
       {session ? (
         <div
           className=" bg-blue-500 text-white px-1 py-1 rounded-full text-xs inline-flex items-center"
-          onClick={() => signOut()}
+          onClick={signOut}
         >
           {" "}
           <img
@@ -22,7 +22,7 @@ export default function User() {
         <button
           className="px-2 py-1 bg-blue-500 text-white rounded-full text-xs"
           // redirect to signIn page (signIn: "/auth/signin")
-          onClick={() => signIn()}
+          onClick={signIn}
         >
           Sign in
         </button>
