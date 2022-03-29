@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Form from "../components/Body/Form";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Form />
+      <Footer />
     </>
   );
 }

@@ -7,7 +7,7 @@
     @apply hover:cursor-pointer;
   }
   .flexLinks {
-    @apply flex items-center space-x-3 text-sm text-black;
+    @apply flex items-center space-x-2 text-sm text-black;
   }
   .btnSearch {
     @apply px-4 py-3 text-xs text-gray-600 bg-gray-100 rounded-md;

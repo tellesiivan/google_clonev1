@@ -24,7 +24,7 @@ export default function Form() {
           />
           <BiMicrophone className="w-8 -mr-3 text-gray-500" />
         </div>
-        <div className="mt-8">
+        <div className="mt-6">
           <button className="mr-1 btnSearch">Google Search</button>
           <button className="ml-1 btnSearch">I&apos;m Feeling Lucky</button>
         </div>

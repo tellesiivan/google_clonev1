@@ -3,7 +3,7 @@ import User from "./User";
 
 export default function Header() {
   return (
-    <header className="flex w-full justify-between px-4 py-4 shadow-sm">
+    <header className="flex justify-between w-full px-4 py-4 shadow-sm">
       <ul className="flexLinks">
         <li className="link">About</li>
         <li className="link">Store</li>

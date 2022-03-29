@@ -7,20 +7,19 @@ export default function User() {
     <div className="link">
       {session ? (
         <div
-          className=" bg-blue-500 text-white px-1 py-1 rounded-full text-xs inline-flex items-center"
+          className="inline-flex items-center px-1 py-1 text-xs text-gray-600 bg-transparent rounded-full hover:bg-gray-200 "
           onClick={signOut}
         >
           {" "}
           <img
-            className="inline-block h-6 w-6 rounded-full"
+            className="inline-block rounded-full w-7 h-7"
             src={session.user?.image}
             alt=""
           />
-          <span className="ml-2 pr-1">{session.user?.name}</span>
         </div>
       ) : (
         <button
-          className="px-2 py-1 bg-blue-500 text-white rounded-full text-xs"
+          className="px-2 py-1 text-xs text-gray-600 bg-gray-200 rounded-full"
           // redirect to signIn page (signIn: "/auth/signin")
           onClick={signIn}
         >
