@@ -20,7 +20,7 @@ export default function Form() {
     value.trim() !== "" &&
       router.push({
         pathname: "/search",
-        query: { query: value.trim().toLocaleLowerCase() },
+        query: { query: value.trim().toLocaleLowerCase(), type: "" },
       });
   }
 

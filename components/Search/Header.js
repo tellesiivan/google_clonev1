@@ -4,7 +4,7 @@ import Link from "next/link";
 import { GoSearch } from "react-icons/go";
 import { BiMicrophone } from "react-icons/bi";
 import { MdClear } from "react-icons/md";
-
+import SearchHeadOpts from "./SearchHeadOpts";
 import { useState } from "react";
 import User from "../User";
 import { useEffect } from "react";
@@ -30,14 +30,13 @@ export default function SearchHeader({ passedQuery }) {
     query.trim() !== "" &&
       router.push({
         pathname: "/search",
-        query: { query: query.trim().toLocaleLowerCase() },
+        query: { query: query.trim().toLocaleLowerCase(), type: "" },
       });
-    console.log(query);
   }
 
   return (
-    <div className="fixed top-0 w-full bg-white">
-      <div className="flex items-center w-full px-4 py-5 border-b border-gray-200">
+    <div className="fixed top-0 w-full py-6">
+      <div className="flex items-center w-full px-4 mb-5">
         <Link href="/" passHref>
           <a className="flex">
             <Image
@@ -51,14 +50,14 @@ export default function SearchHeader({ passedQuery }) {
           </a>
         </Link>
         <form
-          className="flex items-center flex-grow max-w-xl px-4 py-2 ml-8 mr-5 text-sm border border-gray-200 rounded-full focus-within:shadow-md hover:shadow-md"
+          className="flex items-center flex-grow max-w-xl px-4 py-2 ml-8 mr-5 text-sm bg-white border rounded-full focus-within:shadow-md hover:shadow-md"
           onSubmit={onSubmitHandler}
         >
           <input
             type="text"
             value={query}
             onChange={getQuery}
-            className="w-full focus:outline-none"
+            className="w-full bg-transparent focus:outline-none"
           />
           <MdClear
             className="mr-2 text-gray-600 cursor-pointer"
@@ -76,6 +75,7 @@ export default function SearchHeader({ passedQuery }) {
         </form>
         <User customClass="ml-auto" />
       </div>
+      <SearchHeadOpts />
     </div>
   );
 }
