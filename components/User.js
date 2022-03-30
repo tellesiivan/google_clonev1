@@ -1,10 +1,10 @@
 import { useSession, signIn, signOut } from "next-auth/react";
 
-export default function User() {
+export default function User({ customClass }) {
   const { data: session, status } = useSession();
 
   return (
-    <div className="link">
+    <div className={`link ${customClass}`}>
       {session ? (
         <div
           className="inline-flex items-center px-1 py-1 text-xs text-gray-600 bg-transparent rounded-full hover:bg-gray-200 "
