@@ -35,8 +35,8 @@ export default function SearchHeader({ passedQuery }) {
   }
 
   return (
-    <div className="fixed top-0 w-full py-6">
-      <div className="flex items-center w-full px-4 mb-5">
+    <div className="sticky top-0 z-30 w-full pt-6 bg-slate-50">
+      <div className="flex items-center w-full px-4 pb-5">
         <Link href="/" passHref>
           <a className="flex">
             <Image

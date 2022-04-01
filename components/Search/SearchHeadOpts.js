@@ -8,7 +8,7 @@ export default function SearchHeadOpts() {
   const { type } = router.query;
 
   return (
-    <div className="flex justify-center w-full space-x-6 text-gray-600 border-b border-gray-300 select-none md:pl-36 md:justify-start">
+    <div className="flex w-full px-4 pl-4 space-x-6 text-gray-600 border-b border-gray-300 select-none sm:justify-start">
       <SearchOpt
         settings={{
           title: "All",

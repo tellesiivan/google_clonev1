@@ -2,9 +2,9 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import SearchHeader from "../components/Search/Header";
 import DUMMY_DATA from "../DUMMY_DATA";
+import SearchResults from "../components/Search/SearchResults";
 
 export default function Search({ data }) {
-  console.log(data);
   const router = useRouter();
   const { query } = router.query;
 
@@ -14,6 +14,7 @@ export default function Search({ data }) {
         <title>Searching for {query}</title>
       </Head>
       <SearchHeader passedQuery={query} />
+      <SearchResults data={data} />
     </>
   );
 }

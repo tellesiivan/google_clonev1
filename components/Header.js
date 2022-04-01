@@ -10,7 +10,7 @@ export default function Header() {
     <header
       className={`${
         pathname === "/search" ? "hidden" : "flex"
-      } justify-between w-full px-4 py-4 shadow-sm`}
+      } justify-between w-full px-4 py-4 shadow-sm bg-slate-100 `}
     >
       <ul className="flexLinks">
         <li className="link">About</li>
