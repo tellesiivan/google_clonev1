@@ -16,7 +16,7 @@ export default function PaginationButtons() {
         <Link href={`${linkTo}${previous}`} passHref>
           <div className="flex flex-row items-center px-2 py-1 text-white bg-blue-400 rounded-full cursor-pointer w-fit">
             <RiArrowDropLeftLine size="1.2em" />
-            <p className="text-xs ">previous</p>
+            <p className="text-xs ">Previous</p>
           </div>
         </Link>
       )}

@@ -1,7 +1,6 @@
 import parse from "html-react-parser";
 
 export default function SearchItem({ result }) {
-  console.log(result);
   return (
     <div className="flex flex-col max-w-2xl">
       <a
