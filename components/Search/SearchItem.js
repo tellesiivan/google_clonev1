@@ -2,7 +2,10 @@ import parse from "html-react-parser";
 
 export default function SearchItem({ result }) {
   return (
-    <div className="flex flex-col max-w-2xl">
+    <div
+      className="flex flex-col max-w-2xl"
+      key={result.cacheId ?? result.title}
+    >
       <a
         href={result.link}
         rel="noreferrer"
